@@ -682,8 +682,7 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding-top: 24px;
-    padding-right: 24px;
+    padding: 24px;
 
     min-width: 408px;
     min-height: 576px;
@@ -703,6 +702,7 @@ ul {
     height: 24px;
 
     margin-left: auto;
+    margin-bottom: 24px;
 
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -719,3 +719,49 @@ textarea {
     resize: none;
 }
 
+.modal-title {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.form{
+    width: 360px;
+    outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.form-field textarea::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-input {
+    width: 360px;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-input.comment {
+    height: 120px;
+}
+
+.form-label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--customer-bg-cl);
+}

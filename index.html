@@ -49,7 +49,9 @@
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
 
-          <button type="button" class="button button-hero" data-modal-open>Order Service</button>
+          <button type="button" class="button button-hero" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -60,9 +62,9 @@
           <ul class="features">
             <li class="feture-item item icon-antenna">
               <div class="feature-thumb">
-              <svg class="feature-icon" width="64" height="64">
-                <use href="./images/symbol-defs.svg#icon-antenna"></use>
-              </svg>
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                </svg>
               </div>
               <h3 class="feature-title title">Strategy</h3>
               <p>
@@ -72,9 +74,9 @@
             </li>
             <li class="feture-item item">
               <div class="feature-thumb">
-              <svg class="feature-icon" width="64" height="64">
-                <use href="./images/symbol-defs.svg#icon-clock"></use>
-              </svg>
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
               </div>
               <h3 class="title">Punctuality</h3>
               <p>
@@ -84,9 +86,9 @@
             </li>
             <li class="feture-item item icon-diagram">
               <div class="feature-thumb">
-              <svg class="feature-icon" width="64" height="64">
-                <use href="./images/symbol-defs.svg#icon-diagram"></use>
-              </svg>
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
               </div>
               <h3 class="title">Diligence</h3>
               <p>
@@ -96,9 +98,9 @@
             </li>
             <li class="feture-item item icon-astronaut">
               <div class="feature-thumb">
-              <svg class="feature-icon" width="64" height="64">
-                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-              </svg>
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
               </div>
               <h3 class="title">Technologies</h3>
               <p>
@@ -295,7 +297,6 @@
             </a>
           </li>
         </ul>
-
       </div>
     </section>
 
@@ -353,22 +354,39 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <h2>Leave your contacts and we will call you back</h2>
-        <form class="js-speaker-form">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name">
+        <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+        <form class="form js-speaker-form" autocomplete="on">
+          <div class="form-field">
+            <label for="name" class="form-label">Name</label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
 
-          <label for="tel">Phone</label>
-          <input type="tel" name="tel" id="tel">
+          <div class="form-field">
+          <label for="tel" class="form-label">Phone</label>
+          <input class="form-input" type="tel" name="tel" id="tel" />
+          </div>
 
-          <label for="mail">Email</label>
-          <input type="email" name="mail" id="mail">
+          <div class="form-field">
+          <label class="form-label" for="mail">Email</label>
+          <input class="form-input" type="email" name="mail" id="mail" />
+          </div>
 
-          <label for="comment">Comment</label>
-          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          <div class="form-field">
+          <label class="form-label" for="comment">Comment</label>
+          <textarea
+            class="form-input comment"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Text input"
+          ></textarea>
+          </div>
 
-          <input type="checkbox" name="accept" value="accept" id="accept">
-          <label for="accept">I accept the terms and conditions of the Privacy Policy</label>
+          <input type="checkbox" name="accept" value="accept" id="accept" />
+          <label for="accept"
+            >I accept the terms and conditions of the Privacy Policy</label
+          >
 
           <button type="submit">Send</button>
         </form>
