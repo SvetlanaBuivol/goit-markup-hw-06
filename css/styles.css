@@ -529,6 +529,9 @@ ul {
     background-color: var(--green-cl);
 }
 
+.footer-media {
+    margin-right: 80px;
+}
 
 
 /* Styles for portfolio */
@@ -730,7 +733,6 @@ textarea {
 
 .form{
     width: 360px;
-    outline: 1px solid tomato;
     margin-left: auto;
     margin-right: auto;
 }
@@ -757,6 +759,7 @@ textarea {
 
 .form-input.comment {
     height: 120px;
+    margin-bottom: 16px;
 }
 
 .form-label {
@@ -764,4 +767,53 @@ textarea {
     font-size: 12px;
     line-height: 14px;
     color: var(--customer-bg-cl);
+}
+
+.form input[type="checkbox"] {
+  
+}
+
+.checkbox {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.checkbox-txt {
+    font-size: 12px;
+    line-height: 1.3;
+    color: #757575;
+}
+
+.modal-btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border: none;
+    padding: 16px 32px;
+    min-width: 170px;
+}
+
+/* ==========FOOTER FORM========== */
+.footer-btn {
+    border: none;
+    padding: 8px 24px;
+    min-width: 168px;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    margin-right: 24px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--heading-text-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-input-button {
+    display: flex;
 }
