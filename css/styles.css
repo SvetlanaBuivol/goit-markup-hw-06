@@ -490,10 +490,13 @@ ul {
 
 .footer-container {
     display: flex;
+
 }
 
 .footer-title {
+    display: inline-block;
     margin-bottom: 16px;
+    margin-top: 0;
 
     font-weight: 500;
     font-size: 16px;
@@ -861,6 +864,11 @@ textarea {
 
 
 /* ==========FOOTER FORM========== */
+
+.modal-descr {
+    display: block;
+    margin-bottom: 16px;
+}
 .footer-btn {
     border: none;
     display: flex;
@@ -875,7 +883,8 @@ textarea {
     height: 40px;
     padding: 8px 16px;
     margin-right: 24px;
-    
+
+    color: var(--footer-text);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: var(--heading-text-color);
